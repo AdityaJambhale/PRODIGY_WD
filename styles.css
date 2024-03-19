@@ -1,0 +1,54 @@
+body {
+  font-family: 'Oswald', sans-serif; /* Playful font */
+  text-align: center;
+}
+
+h1 {
+  color: #f57c00; /* Warm color for heading */
+  font-size: 2em; /* Increase heading size */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Subtle drop shadow */
+}
+
+.game {
+  margin: 20px auto;
+  width: 300px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+  background-color: #ffe0b3; /* Warm base color */
+  border: 1px solid #f0d89a; /* Thin border */
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f57c00; /* Warm cell color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  border: 1px solid #f0d89a; /* Thin border */
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.cell:hover {
+  background-color: #f0d08c; /* Slightly darker hover color */
+}
+
+.status {
+  margin-top: 10px;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
